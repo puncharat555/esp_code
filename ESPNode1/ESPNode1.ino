@@ -57,7 +57,7 @@ void setup() {
 
   // เริ่มต้น LoRa
   LoRa.setPins(LORA_SS, LORA_RST, LORA_DIO0);
-  if (!LoRa.begin(433200000 )) { //channel 1 = 433.2 MHz
+  if (!LoRa.begin(433200000 )) { //Node1 1 = 433.2 MHz
     Serial.println("Starting LoRa failed!");
     while (1);
   }
